@@ -40,7 +40,7 @@ export interface DocDemos {
  * @description given a parsed function, check to see if it is annotated with @website in a JSDoc.
  */
 function checkForWebsiteTag(fd: FunctionDeclaration): boolean {
-  let test: boolean = false;
+  let test = false;
   fd.getJsDocs().forEach((doc: JSDoc) => {
     doc.getTags().forEach((tag: JSDocTag) => {
       if (tag.getTagName() === 'website') {
@@ -51,16 +51,17 @@ function checkForWebsiteTag(fd: FunctionDeclaration): boolean {
   return test;
 }
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /**
  * @function debugFunc
- * @description THis is a way to debut the function function when things go wrong
+ * @description This is a way to debut the function function when things go wrong
  */
-
 function debugFunc(func: FunctionDeclaration) {
   // There are other things in the API that may aid in debugging issues.
   console.log(`func name: ${func.getName()}`);
   console.log(`func name: ${func.getSourceFile().getBaseName()}`);
 }
+/* eslint-enable @typescript-eslint/no-unused-vars */
 
 /**
  * @function extractFilename

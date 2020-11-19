@@ -7,9 +7,9 @@
 import * as glob from 'glob';
 import { extractFilename, DocDemos, parseStories, saveCoreDemos } from './utils';
 
-let stories: DocDemos[] = [];
+const stories: DocDemos[] = [];
 // Note: even though this is in the parse directory, it executes the scripts form the build directory, one level up from here.
-let fileArray: string[] = glob.sync('../src/**/*.stories.ts');
+const fileArray: string[] = glob.sync('../src/**/*.stories.ts');
 
 // Parse the demos from all stories files
 fileArray.forEach(file => {
