@@ -2,7 +2,7 @@
   "name": "@clr/core",
   "version": "4.0.0",
   "scripts": {
-    "start": "npm-run-all build -p build:watch storybook:start",
+    "start": "npm-run-all ../../apps/website/build -p build:watch storybook:start",
     "storybook:start": "start-storybook -s .storybook/public -p 6006 --config-dir=.storybook",
     "storybook:build": "build-storybook -s .storybook/public -c .storybook -o ../../dist/website/storybook/core --quiet",
     "poststorybook:build": "npx sb extract ../../dist/website/storybook/core/ ../../dist/website/stories.json",

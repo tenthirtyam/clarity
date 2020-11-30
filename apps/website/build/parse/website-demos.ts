@@ -9,7 +9,7 @@ import { extractFilename, DocDemos, parseStories, saveCoreDemos } from './utils'
 
 const stories: DocDemos[] = [];
 // Note: even though this is in the parse directory, it executes the scripts form the build directory, one level up from here.
-const fileArray: string[] = glob.sync('./packages/core/src/**/*.stories.ts');
+const fileArray: string[] = glob.sync('../../packages/core/src/**/*.stories.ts');
 
 // Parse the demos from all stories files
 fileArray.forEach(file => {
@@ -22,7 +22,7 @@ fileArray.forEach(file => {
 });
 
 // Note: even though this is in the parse directory, it executes the scripts form the build directory, one level up from here.const saveDirectory
-const progress: boolean = saveCoreDemos(stories, './apps/website/data/core-demos.json'); // file path is hard coded in this utility
+const progress: boolean = saveCoreDemos(stories, './data/core-demos.json'); // file path is hard coded in this utility
 
 if (progress) {
   console.log(`Core demo data generated in website data folder.`);
