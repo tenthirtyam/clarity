@@ -38,6 +38,7 @@ import {
   circleIcon,
   successStandardIcon,
   errorStandardIcon,
+  pinIcon,
 } from '@clr/core/icon';
 
 ClarityIcons.addIcons(
@@ -55,7 +56,8 @@ ClarityIcons.addIcons(
   dotCircleIcon,
   circleIcon,
   successStandardIcon,
-  errorStandardIcon
+  errorStandardIcon,
+  pinIcon
 );
 loadCoreIconSet();
 
