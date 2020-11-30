@@ -57,26 +57,53 @@ Use integers within badges.
 
 :::
 
-::: compleveltwotitle
+::: complevelonetitle
+
+## Recommendations
+
+:::
+
+::: complevelthreetitle
 
 ### Over 99
 
 :::
 
-:::compleveltwo
+:::complevelthree
 
 When a badge needs to display a number above 99, use “99+” instead of the number. Only show a number over 99 if it is essential to the user’s objectives and you are certain there is room in the design to accommodate it.
 
 :::
 
-::: compleveltwotitle
+<DocIndent>
+<div cds-layout="horizontal gap:xs">
+    <cds-tag readonly status="info">Info <cds-badge status="info">99+<span cds-layout="display:screen-reader-only">item.</span></cds-badge></cds-tag>
+    <cds-tag readonly status="warning">Warning <cds-badge status="warning">99+<span cds-layout="display:screen-reader-only">items.</span></cds-badge></cds-tag>
+</div>
+</DocIndent>
+
+::: complevelthreetitle
 
 ### Color
 
 :::
 
-:::compleveltwo
+:::complevelthree
 
 Badges can contain a variety of colors. Use traffic-light colors to display a sense of urgency or indicate state.
 
 :::
+
+<DocIndent>
+<div cds-layout="horizontal gap:xs">
+    <cds-badge color="gray">1<span cds-layout="display:screen-reader-only">item.</span></cds-badge>
+    <cds-badge color="purple">1<span cds-layout="display:screen-reader-only">item.</span></cds-badge>
+    <cds-badge color="blue">15<span cds-layout="display:screen-reader-only">items.</span></cds-badge>
+    <cds-badge color="orange">2<span cds-layout="display:screen-reader-only">items.</span></cds-badge>
+    <cds-badge color="light-blue">3<span cds-layout="display:screen-reader-only">items.</span></cds-badge>
+    <cds-badge status="info"><span cds-layout="display:screen-reader-only">Info</span>2<span cds-layout="display:screen-reader-only">items.</span></cds-badge>
+    <cds-badge status="success"><span cds-layout="display:screen-reader-only">Success</span>3<span cds-layout="display:screen-reader-only">items.</span></cds-badge>
+    <cds-badge status="warning"><span cds-layout="display:screen-reader-only">Warning</span>12<span cds-layout="display:screen-reader-only">items.</span></cds-badge>
+    <cds-badge status="danger"><span cds-layout="display:screen-reader-only">Danger</span>15<span cds-layout="display:screen-reader-only">items.</span></cds-badge>
+</div>
+</DocIndent>
