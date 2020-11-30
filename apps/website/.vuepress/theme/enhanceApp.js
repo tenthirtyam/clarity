@@ -20,6 +20,11 @@ export default ({
       id: '1762865',
     });
 
+    Vue.filter('capitalize', function (value) {
+      if (!value) return '';
+      return value.charAt(0).toUpperCase() + value.slice(1);
+    });
+
     Sentry.init({
       dsn: 'https://3e41de8eb9e440d6b834fc556ad8e83c@o378402.ingest.sentry.io/5201749',
       integrations: [new VueIntegration({ Vue, attachProps: true, logErrors: true })],

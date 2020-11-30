@@ -21,7 +21,7 @@ interface CoreStoryDemoObject {
 export interface DocDemo {
   fileName: string;
   storyName: string;
-  demo: string;
+  code: string;
 }
 
 /**
@@ -94,7 +94,7 @@ export function parseStories(filePath: string): DocDemo[] {
       websiteDemos.push({
         storyName: func.getName(),
         fileName: func.getSourceFile().getBaseName(),
-        demo: extractTemplate(func.getDescendantsOfKind(SyntaxKind.ReturnStatement)[0].getText()),
+        code: extractTemplate(func.getDescendantsOfKind(SyntaxKind.ReturnStatement)[0].getText()),
       });
     }
   });

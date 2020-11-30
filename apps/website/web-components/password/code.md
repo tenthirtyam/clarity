@@ -1,6 +1,6 @@
 ---
 title: Code
-toc: true
+toc: false
 ---
 
-Core code examples go here.
+<CdsDemos componentName="password" />

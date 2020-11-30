@@ -74,7 +74,6 @@ export default {
   },
 };
 
-/** @website */
 export function all() {
   const search = text('search', '', propertiesGroup);
   const size = select(
