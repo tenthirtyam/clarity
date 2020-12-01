@@ -46,7 +46,7 @@ module.exports = [
         const item = tokens[idx];
 
         if (item.type === 'container_component-section-level-one-title_open') {
-          return `<div class="component-section-title no-clr-ui" cds-text="title" cds-layout="m-b:md">`;
+          return `<div class="component-section-title level-one no-clr-ui" cds-text="title" cds-layout="m-b:md">`;
         } else if (item.type === 'html_block') {
           return item.content;
         } else if (item.type === 'container_component-section-level-one-title_close') {

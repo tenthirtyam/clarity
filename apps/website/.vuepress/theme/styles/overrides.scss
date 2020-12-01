@@ -293,13 +293,22 @@ body .no-clr-ui p {
   margin-top: var(--cds-token-space-size-7, 0.8rem);
 }
 
+.indent-section + .component-section-title,
 .component-section p + p {
   margin-top: var(--cds-token-layout-space-lg, 1.2rem);
 }
 
+.clr-row + .component-section-title,
+.indent-section + .component-section-title.level-one,
 .component-subsection + .component-section-title,
 .component-section + .component-section-title {
   margin-top: var(--cds-token-layout-space-xl, 2.4rem);
+}
+
+.clr-row + .component-section-title.level-one,
+.component-subsection + .component-section-title.level-one,
+.component-section + .component-section-title.level-one {
+  margin-top: var(--cds-token-layout-space-xxl, 4.8rem);
 }
 
 .component-subsection + .inset,
@@ -307,7 +316,7 @@ body .no-clr-ui p {
 .component-subsection + .inline-code,
 .component-section + .inline-code,
 .component-subsection + .component-subsection-title,
-.component-section + .component-subsection-title {
+.component-section + .component-subsection-title .clr-row + .component-subsection-title {
   margin-top: var(--cds-token-layout-space-lg, 1.2rem);
 }
 
