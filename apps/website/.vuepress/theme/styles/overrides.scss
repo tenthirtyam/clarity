@@ -315,6 +315,7 @@ body .no-clr-ui p {
 .component-section + .inset,
 .component-subsection + .inline-code,
 .component-section + .inline-code,
+.component-section + .component-subsection-title,
 .component-subsection + .component-subsection-title,
 .component-section + .component-subsection-title .clr-row + .component-subsection-title {
   margin-top: var(--cds-token-layout-space-lg, 1.2rem);
