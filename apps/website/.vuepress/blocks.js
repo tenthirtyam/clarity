@@ -23,15 +23,15 @@ module.exports = [
   [
     'vuepress-plugin-container',
     {
-      type: 'compsummary',
+      type: 'component-summary',
       render: function (tokens, idx) {
         const item = tokens[idx];
 
-        if (item.type === 'container_compsummary_open') {
+        if (item.type === 'container_component-summary_open') {
           return `<div class="component-summary no-clr-ui" cds-text="subsection">`;
         } else if (item.type === 'html_block') {
           return item.content;
-        } else if (item.type === 'container_compsummary_close') {
+        } else if (item.type === 'container_component-summary_close') {
           return `</div>`;
         }
       },
@@ -41,15 +41,15 @@ module.exports = [
   [
     'vuepress-plugin-container',
     {
-      type: 'complevelonetitle',
+      type: 'component-section-level-one-title',
       render: function (tokens, idx) {
         const item = tokens[idx];
 
-        if (item.type === 'container_complevelonetitle_open') {
+        if (item.type === 'container_component-section-level-one-title_open') {
           return `<div class="component-section-title no-clr-ui" cds-text="title" cds-layout="m-b:md">`;
         } else if (item.type === 'html_block') {
           return item.content;
-        } else if (item.type === 'container_complevelonetitle_close') {
+        } else if (item.type === 'container_component-section-level-one-title_close') {
           return `</div>`;
         }
       },
@@ -59,15 +59,15 @@ module.exports = [
   [
     'vuepress-plugin-container',
     {
-      type: 'complevelone',
+      type: 'component-section-level-one',
       render: function (tokens, idx) {
         const item = tokens[idx];
 
-        if (item.type === 'container_complevelone_open') {
+        if (item.type === 'container_component-section-level-one_open') {
           return `<div class="component-section no-clr-ui" cds-text="body">`;
         } else if (item.type === 'html_block') {
           return item.content;
-        } else if (item.type === 'container_complevelone_close') {
+        } else if (item.type === 'container_component-section-level-one_close') {
           return `</div>`;
         }
       },
@@ -77,15 +77,15 @@ module.exports = [
   [
     'vuepress-plugin-container',
     {
-      type: 'compleveltwotitle',
+      type: 'component-section-level-two-title',
       render: function (tokens, idx) {
         const item = tokens[idx];
 
-        if (item.type === 'container_compleveltwotitle_open') {
+        if (item.type === 'container_component-section-level-two-title_open') {
           return `<div class="component-section-title no-clr-ui" cds-text="section" cds-layout="m-b:md">`;
         } else if (item.type === 'html_block') {
           return item.content;
-        } else if (item.type === 'container_compleveltwotitle_close') {
+        } else if (item.type === 'container_component-section-level-two-title_close') {
           return `</div>`;
         }
       },
@@ -95,15 +95,15 @@ module.exports = [
   [
     'vuepress-plugin-container',
     {
-      type: 'compleveltwo',
+      type: 'component-section-level-two',
       render: function (tokens, idx) {
         const item = tokens[idx];
 
-        if (item.type === 'container_compleveltwo_open') {
+        if (item.type === 'container_component-section-level-two_open') {
           return `<div class="component-section no-clr-ui" cds-text="body">`;
         } else if (item.type === 'html_block') {
           return item.content;
-        } else if (item.type === 'container_compleveltwo_close') {
+        } else if (item.type === 'container_component-section-level-two_close') {
           return `</div>`;
         }
       },
@@ -113,15 +113,15 @@ module.exports = [
   [
     'vuepress-plugin-container',
     {
-      type: 'complevelthreetitle',
+      type: 'component-section-level-three-title',
       render: function (tokens, idx) {
         const item = tokens[idx];
 
-        if (item.type === 'container_complevelthreetitle_open') {
+        if (item.type === 'container_component-section-level-three-title_open') {
           return `<div class="component-subsection-title no-clr-ui" cds-text="subsection" cds-layout="m-b:xs">`;
         } else if (item.type === 'html_block') {
           return item.content;
-        } else if (item.type === 'container_complevelthreetitle_close') {
+        } else if (item.type === 'container_component-section-level-three-title_close') {
           return `</div>`;
         }
       },
@@ -131,15 +131,15 @@ module.exports = [
   [
     'vuepress-plugin-container',
     {
-      type: 'complevelthree',
+      type: 'component-section-level-three',
       render: function (tokens, idx) {
         const item = tokens[idx];
 
-        if (item.type === 'container_complevelthree_open') {
+        if (item.type === 'container_component-section-level-three_open') {
           return `<div class="component-subsection no-clr-ui" cds-text="body">`;
         } else if (item.type === 'html_block') {
           return item.content;
-        } else if (item.type === 'container_complevelthree_close') {
+        } else if (item.type === 'container_component-section-level-three_close') {
           return `</div>`;
         }
       },

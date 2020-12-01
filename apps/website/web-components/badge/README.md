@@ -3,19 +3,19 @@ title: Overview
 toc: true
 ---
 
-::: compsummary
+::: component-summary
 
 Badges are status modifiers to other elements which display the numerical value within an element either next to it or inside the element itself.
 
 :::
 
-::: complevelonetitle
+::: component-section-level-one-title
 
 ## Usage
 
 :::
 
-:::complevelone
+:::component-section-level-one
 
 Badges have a colorful, bold, and filled style that makes them stand out when appearing within or next to another component.
 
@@ -27,49 +27,49 @@ Badges have a colorful, bold, and filled style that makes them stand out when ap
 <div>Use a label to <b>show metadata</b>. It is usually text content. A label can contain a badge.</div>
 </DocPinbox>
 
-::: complevelonetitle
+::: component-section-level-one-title
 
 ## Anatomy
 
 :::
 
-::: complevelthreetitle
+::: component-section-level-three-title
 
 ### Container
 
 :::
 
-:::complevelthree
+:::component-section-level-three
 
 Badges have a more rounded border radius, similar to labels, to distinguish them from primary buttons.
 
 :::
 
-::: complevelthreetitle
+::: component-section-level-three-title
 
 ### Content
 
 :::
 
-:::complevelthree
+:::component-section-level-three
 
 Use integers within badges.
 
 :::
 
-::: complevelonetitle
+::: component-section-level-one-title
 
 ## Recommendations
 
 :::
 
-::: complevelthreetitle
+::: component-section-level-three-title
 
 ### Over 99
 
 :::
 
-:::complevelthree
+:::component-section-level-three
 
 When a badge needs to display a number above 99, use “99+” instead of the number. Only show a number over 99 if it is essential to the user’s objectives and you are certain there is room in the design to accommodate it.
 
@@ -82,13 +82,13 @@ When a badge needs to display a number above 99, use “99+” instead of the nu
 </div>
 </DocIndent>
 
-::: complevelthreetitle
+::: component-section-level-three-title
 
 ### Color
 
 :::
 
-:::complevelthree
+:::component-section-level-three
 
 Badges can contain a variety of colors. Use traffic-light colors to display a sense of urgency or indicate state.
 
