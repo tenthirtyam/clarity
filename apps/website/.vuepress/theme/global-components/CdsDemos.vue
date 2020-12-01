@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <!--    <h2 cds-layout="m-b:xl">{{ componentName | capitalize }} Code</h2>-->
+  <div v-if="component.stories">
+    <!--    <h2 cds-layout="m-b:xl">{{ componentName | uppercase }} Code</h2>-->
     <section cds-layout="m-b:xl" v-for="story in component.stories">
-      <h2 cds-layout="m-b:md">{{ story.storyName | capitalize }}</h2>
+      <h2 cds-layout="m-b:md">{{ story.storyName | uppercase }}</h2>
       <CdsDemo :code="story.code" />
     </section>
   </div>
@@ -16,8 +16,8 @@ export default {
   props: ['componentName'],
   computed: {
     component: function () {
-      console.log(demos.coreStories.find(s => s.componentName === this.componentName));
-      return demos.coreStories.find(s => s.componentName === this.componentName);
+      const guard = demos.coreStories.find(s => s.componentName === this.componentName);
+      return guard ? guard : [];
     },
   },
 };

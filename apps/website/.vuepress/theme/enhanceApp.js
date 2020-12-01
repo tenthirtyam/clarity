@@ -3,6 +3,8 @@ import { Vue as VueIntegration } from '@sentry/integrations';
 import VueResource from 'vue-resource';
 import Hotjar from 'vue-hotjar';
 
+import './filters/uppercase';
+
 import './styles/index.scss';
 
 export default ({
@@ -18,11 +20,6 @@ export default ({
     Vue.use(VueResource);
     Vue.use(Hotjar, {
       id: '1762865',
-    });
-
-    Vue.filter('capitalize', function (value) {
-      if (!value) return '';
-      return value.charAt(0).toUpperCase() + value.slice(1);
     });
 
     Sentry.init({

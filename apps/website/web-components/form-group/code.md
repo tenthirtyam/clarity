@@ -3,4 +3,4 @@ title: Code
 toc: false
 ---
 
-<CdsDemos componentName="form-groups" />
+<CdsDemos componentName="form-group" />
