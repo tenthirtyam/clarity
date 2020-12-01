@@ -1,8 +1,11 @@
 import { ESLintUtils } from '@typescript-eslint/experimental-utils';
 import {
   HTMLElement,
+  // HTMLAttributeName,
+  // HTMLAttribute,
   // HTMLAttribute
 } from '../../types';
+import { RuleFix } from '@typescript-eslint/experimental-utils/dist/ts-eslint';
 
 export const createESLintRule = ESLintUtils.RuleCreator(() => ``);
 
@@ -25,12 +28,23 @@ export default createESLintRule({
   create(context) {
     return {
       'HTMLElement[tagName="clr-icon"]': (node: HTMLElement): void => {
-        // const attributes = node.attributes || [];
+        const fixedOpeningTag = node.value.replace('<clr-icon', '<cds-icon');
+        const fixedValue = fixedOpeningTag.replace('</clr-icon>', '</cds-icon>');
+
+        const attributes = node?.attributes || [];
+        const directionAttributes = attributes.filter(a => a.attributeName.value === 'dir');
+
         context.report({
           node: node as any,
           messageId: 'clrIconFailure',
           fix: fixer => {
-            return fixer.replaceText(node as any, '<cds-icon></cds-icon>');
+            const fixes: RuleFix[] = [];
+            directionAttributes.forEach(attribute => {
+              fixes.push(fixer.replaceText(attribute.attributeName as any, 'direction'));
+            });
+            fixes.push(fixer.replaceText(node as any, fixedValue));
+
+            return fixes;
           },
         });
       },

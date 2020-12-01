@@ -56,9 +56,15 @@ function getInvalidTest(
 htmlRuleTester.run('no-clr-alert', rule, {
   invalid: [
     getInvalidTest(`<clr-icon></clr-icon>`, [], undefined, `<cds-icon></cds-icon>`),
-    // getInvalidTest(`
-    //   <clr-icon dir="left"></clr-icon>
-    // `,
+    getInvalidTest(
+      `<clr-icon dir="left"></clr-icon>`,
+      [
+        { line: 1, column: 1 },
+        { line: 1, column: 11 },
+      ],
+      [iconFailureMessageId, iconFailureMessageId],
+      `<cds-icon direction="left"></cds-icon>`
+    ),
     // `
     //   <cds-icon direction="left"></cds-icon>
     // `
