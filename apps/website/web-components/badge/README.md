@@ -24,7 +24,7 @@ Badges have a colorful, bold, and filled style that makes them stand out when ap
 <DocPinbox>
 <div>Use a badge to <b>highlight the count</b>.</div>
 <div class="versus"><div class="versus-bubble">vs</div></div>
-<div>Use a label to <b>show metadata</b>. It is usually text content. A label can contain a badge.</div>
+<div>Use a <a href="/web-components/tag">tag</a> to <b>show metadata</b>. It is usually text content. A <a href="/web-components/tag">tag</a> can contain a badge.</div>
 </DocPinbox>
 
 ::: component-section-level-one-title
@@ -41,7 +41,7 @@ Badges have a colorful, bold, and filled style that makes them stand out when ap
 
 :::component-section-level-three
 
-Badges have a more rounded border radius, similar to labels, to distinguish them from primary buttons.
+Badges have a more rounded border radius, similar to [tags](/web-components/tag), to distinguish them from primary buttons.
 
 :::
 
