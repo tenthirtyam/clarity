@@ -28,9 +28,17 @@ Do not confuse a datalist element with the select input. Datalist elements usual
 <DocPinbox>
 <div>
 !!!include(.vuepress/public/core-usage-demos/datalist/basic.html)!!!
+
+Use a datalist:
+
+- When the user needs to choose from a long list of items to be filtered before selection
+- When there are pre-defined options but the user needs the ability to input a custom calue
+- With more than 13 options
+
 </div>
+
 <div class="versus"><div class="versus-bubble">vs</div></div>
-<div>
+<div style="align-self: flex-start;ga && gs ">
     <cds-select control-width="shrink">
       <label>Select</label>
       <select>
@@ -40,21 +48,16 @@ Do not confuse a datalist element with the select input. Datalist elements usual
       </select>
       <cds-control-message>Helper message</cds-control-message>
     </cds-select>
-</div>
-</DocPinbox>
-
-::: component-section-level-two
-
-Use a datalist:
-
-- When the user needs to choose from a long list of items to be filtered before selection
-- When there are pre-defined options but the user needs the ability to input a custom calue
-- With more than 13 options
 
 Use a select:
 
 - When a custom input value is not allowed
 - With 3-13 options
+
+</div>
+</DocPinbox>
+
+::: component-section-level-two
 
 :::
 
@@ -109,5 +112,29 @@ Use a select:
 <div>
 !!!include(.vuepress/public/core-usage-demos/datalist/layouts.html)!!!
 </div>
+
+:::
+
+::: component-section-level-one-title
+
+## Behavior
+
+:::
+
+::: component-section-level-one
+
+Datalist support the use of autocomplete.
+
+:::
+
+::: component-section-level-two-title
+
+### Auto-complete
+
+:::
+
+::: component-section-level-two
+
+Datalist natively supports autocomplete behavior. Users can search and filter while using the datalist component.
 
 :::
