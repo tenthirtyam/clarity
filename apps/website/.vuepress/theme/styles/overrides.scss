@@ -325,3 +325,11 @@ body .no-clr-ui p {
 .theme-default-content .component-section:last-child() {
   margin-bottom: var(--cds-token-layout-space-xl, 2.4rem);
 }
+
+.card-like {
+  border-radius: var(----cds-token-global-border-radius, 0.15rem);
+  border-style: solid;
+  border-width: var(----cds-token-global-border-width, 0.05rem);
+  border-color: var(--cds-token-color-neutral-500, #b3b3b3);
+  background: var(--cds-token-color-neutral-0);
+}
