@@ -104,7 +104,6 @@ module.exports = {
     },
   },
   configureWebpack: {
-    devtool: 'source-map',
     resolve: {
       alias: {
         // Note: paths to dist/core/register.js are from website root, not .vuepress/register.js
