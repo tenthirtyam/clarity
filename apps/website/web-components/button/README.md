@@ -36,7 +36,7 @@ Clarity comes with three different types of buttons to use. They are provided to
     <cds-button action="outline">outline button</cds-button>
 </div>
 </DocInset>
-<p cds-text="body" cds-layout="p-t:lg p-b:md">Outline buttons provide a lighter weight button style. They are used to indicate a <span cds-text="semibold">secondary action</span> that compliments a primary action or to reduce visual noise when there are many action of <span cds-text="semibold">equal</span> importance on the page.</p>
+<p cds-text="body" cds-layout="p-t:lg p-b:md">Outline buttons provide a lighter weight button style. They are used to indicate a <span cds-text="semibold">secondary action</span> that compliments a primary action or to reduce visual noise when there are many actions of <span cds-text="semibold">equal</span> importance on the page.</p>
 </div>
 <div class="clr-col-sm-12 clr-col-lg-4">
 <DocInset height="72">
@@ -64,15 +64,15 @@ While buttons and links can both be given similar visual treatments, it is impor
 <div class="clr-col-sm-12 clr-col-lg-6" cds-layout="p-b:lg p-b@lg:none">
 <DocInset height="72">
 <div cds-layout="horizontal align:center">
-    <cds-button action="flat">flat button</cds-button>
+    <cds-button>button</cds-button>
 </div>
 </DocInset>
-<p cds-text="body" cds-layout="p-t:lg p-b:md">Use flat buttons when a user is expected to <span cds-text="semibold">take an action</span>.</p>
+<p cds-text="body" cds-layout="p-t:lg p-b:md">Use  buttons when a user is expected to <span cds-text="semibold">take an action</span>.</p>
 </div>
 <div class="clr-col-sm-12 clr-col-lg-6">
 <DocInset height="72">
 <div cds-layout="horizontal align:center">
-    <cds-button action="outline">outline button</cds-button>
+    <a href="javascript:void(0)"><cds-button>link</cds-button></a>
 </div>
 </DocInset>
 <p cds-text="body" cds-layout="p-t:lg p-b:md">Use a link when a user is expected to be <span cds-text="semibold">taken to a different page.</span>.</p>

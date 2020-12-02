@@ -41,6 +41,9 @@ import {
   errorStandardIcon,
   pinIcon,
   envelopeIcon,
+  uploadIcon,
+  blockIcon,
+  animationIcon,
 } from '@clr/core/icon';
 
 ClarityIcons.addIcons(
@@ -60,7 +63,10 @@ ClarityIcons.addIcons(
   successStandardIcon,
   errorStandardIcon,
   pinIcon,
-  envelopeIcon
+  envelopeIcon,
+  uploadIcon,
+  blockIcon,
+  animationIcon
 );
 loadCoreIconSet();
 
