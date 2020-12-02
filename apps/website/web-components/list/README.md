@@ -21,74 +21,125 @@ Use a list to group related items and organize them vertically for easy scanning
 
 :::
 
-::: component-section-level-one-title
+::: component-section-level-two-title
 
 ## Types
 
 :::
 
-:::component-section-level-one
+:::component-section-level-two
 
-Clarity has three types of lists: unordered, ordered, and unstyled.
+There are three types of lists: unordered, ordered, and unstyled. Lists can be nested and the varieties can be mixed within nested groupings.
 
 :::
 
-<div class="clr-row" cds-layout="m-b:xxl">
-<div class="clr-col-sm-12 clr-col-lg-4" cds-layout="p-b@lg:none p-b:lg">
-<DocInset height="240">
-<div class="card-like" cds-text cds-layout="vertical gap:lg p:md align:stretch">
-    <ul cds-list>
-        <li>List item 1</li>
-        <li>List item 2</li>
-        <li>
-            List item 3
-            <ul cds-list>
-                <li>List item A</li>
-                <li>List item B</li>
-            </ul>
-        </li>
-        <li>List item 4</li>
-    </ul>
-</div>
-</DocInset>
-<p cds-text="body" cds-layout="p-t:lg p-b:md"><b>Unordered lists</b> have bullet points in front of each item.</p>
-</div>
-<div class="clr-col-sm-12 clr-col-lg-4" cds-layout="p-b@lg:none p-b:lg">
-<DocInset height="240">
-<div class="card-like" cds-text cds-layout="vertical gap:lg p:md align:stretch">
-    <ol cds-list>
-        <li>List item 1</li>
-        <li>List item 2</li>
-        <li>
-            List item 3
-            <ol cds-list>
-                <li>List item A</li>
-                <li>List item B</li>
-            </ol>
-        </li>
-        <li>List item 4</li>
-    </ol>
-</div>
-</DocInset>
-<p cds-text="body" cds-layout="p-t:lg p-b:md"><b>Ordered list</b> items are numbered.</p>
-</div>
-<div class="clr-col-sm-12 clr-col-lg-4">
-<DocInset height="240">
-<div class="card-like" cds-text cds-layout="vertical gap:lg p:md p-l:lg align:stretch">
-    <ul cds-list="unstyled">
-        <li>List item 1</li>
-        <li>List item 2</li>
-        <li>
-            List item 3
-            <ul cds-list="unstyled">
-                <li>List item A</li>
-                <li>List item B</li>
-            </ul>
-        </li>
-        <li>List item 4</li>
-    </ul>
-</div>
-</DocInset>
-<p cds-text="body" cds-layout="p-t:lg p-b:md"><b>Unstyled list</b> items have no indicators.</p>
-</div>
-</div>
+::: component-section-level-three-title
+
+#### Unordered List
+
+:::
+
+:::component-section-level-three
+
+Use an unordered list when the order does not matter.
+
+:::
+
+<DocIndent>
+<ul cds-list>
+    <li>Chicken Breast</li>
+    <li>Flour</li>
+    <li>Garlic</li>
+    <li>Honey</li>
+</ul>
+</DocIndent>
+
+::: component-section-level-three-title
+
+#### Ordered List
+
+:::
+
+:::component-section-level-three
+
+Use an ordered list when you need to convey a priority, hierarchy, or sequence between list items.
+
+:::
+
+<DocIndent>
+<ol cds-list>
+    <li>Split chicken breast in half</li>
+    <li>Dust chicken with flour</li>
+    <li>Sear chicken, add butter, garlic, vinegar, soy sauce, honey</li>
+    <li>Simmer until the sauce thickens</li>
+</ol>
+</DocIndent>
+
+::: component-section-level-three-title
+
+#### Unstyled List
+
+:::
+
+:::component-section-level-three
+
+Use an unstyled list when styling is unecessary to improve comprehension or hierarchy.
+
+:::
+
+<DocIndent>
+<ul cds-list>
+    <li>Calories: 323 cal</li>
+    <li>Carbohydrates: 23g</li>
+    <li>Protein: 28g</li>
+    <li>Fat: 13g</li>
+</ul>
+</DocIndent>
+
+::: component-section-level-three-title
+
+#### Nested Lists
+
+:::
+
+:::component-section-level-three
+
+You can also mix and match list styles based on your use cases.
+
+:::
+
+<DocIndent>
+<ul cds-list>
+    <li>Gluten free</li>
+    <li>Soy sauce</li>
+    <li>Other proteins
+        <ul cds-list>
+            <li>Tofu</li>
+            <li>Prawns/shrimp</li>
+            <li>Fish</li>
+        </ul>
+    </li>
+    <li>Nutrition</li>
+</ul>
+</DocIndent>
+
+::: component-section-level-three-title
+
+#### Compact List
+
+:::
+
+:::component-section-level-three
+
+You can also mix and match list styles based on your use cases.
+
+:::
+
+<DocIndent>
+<ul cds-list cds-layout="vertical gap:none" cds-text="body">
+    <li>Chicken Breast</li>
+    <li>Flour</li>
+    <li>Garlic</li>
+    <li>Honey</li>
+</ul>
+</DocIndent>
