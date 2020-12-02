@@ -128,7 +128,7 @@ Consistent button styles make it easier for a user to recognize areas to take ac
 
 ::: component-section-level-two-title
 
-Typography
+### Typography
 
 :::
 
@@ -153,7 +153,7 @@ The text inside of buttons is always **uppercase**. This indicates action by dif
 
 ::: component-section-level-two-title
 
-Visual Style
+### Visual Style
 
 :::
 
@@ -165,7 +165,7 @@ Clarity buttons have several distinct properties and design considerations.
 
 ::: component-section-level-three-title
 
-Border Radius
+#### Border Radius
 
 :::
 
@@ -177,7 +177,7 @@ Clarity buttons have a border radius of 3px.
 
 ::: component-section-level-three-title
 
-Size
+#### Size
 
 :::
 
@@ -199,7 +199,7 @@ Size
 
 ::: component-section-level-three-title
 
-Primary Color
+#### Primary Color
 
 :::
 
@@ -209,17 +209,94 @@ A primary color provides consistency across an application. It trains the user t
 
 :::
 
-::: component-section-level-three-title
+::: component-section-level-two-title
 
-Action-Based Color
+### Using Icons
 
 :::
 
-<div class="clr-row" cds-layout="m-t:md">
-<div class="clr-col-sm-12 clr-col-lg-6" cds-layout="p-b:lg p-b@lg:none">
-<p cds-text="body">Different colors may be used based on the severity of an action’s result. For example, using a red button when “deleting” files indicates high severity.</p>
+<DocInset height="100" cds-layout="m-b:lg">
+<div cds-layout="horizontal gap:sm align:center">
+    <cds-button action="outline" status="danger"><cds-icon shape="times"></cds-icon> cancel</cds-button>
+    <cds-button>download <cds-icon shape="download"></cds-icon></cds-button>
 </div>
-<div class="clr-col-sm-12 clr-col-lg-6">
-<ClrImage title="Visualization of button colors" src="/images/angular-components/button/action_colors.png" />
+</DocInset>
+
+::: component-section-level-two
+
+Icons can be used inside buttons to decorate the call-to-action with a visual indicator. Icons should be used alongside text that clearly indicates what the interaction is expected to do.
+
+Icons can be placed to the left or right of the button text. Icons should only appear on the right of the text if the call-to-action would extend outside of the current context, however. Examples include downloading a file, opening a new window, or navigating the user to a page outside the application.
+
+Buttons should only use icons by themselves if an interface is constrained by space. Using only an icon, and no text, in a button requires the use of the [icon button component](/web-components/icon-button).
+
+:::
+
+::: component-section-level-two-title
+
+### Using Badges
+
+:::
+
+<DocInset height="100" cds-layout="m-b:lg">
+<div cds-layout="horizontal gap:sm align:center">
+    <cds-button status="danger" action="outline">Archive Items <cds-badge>10<span cds-layout="display:screen-reader-only">items</span></cds-badge></cds-button>
+    <cds-button><cds-icon shape="envelope" badge></cds-icon> Mark As Read <cds-badge>99+<span cds-layout="display:screen-reader-only">items</span></cds-badge></cds-button>
 </div>
+</DocInset>
+
+::: component-section-level-two
+
+[Badges](/web-components/badge) can be used inside buttons to indicate a known number of items associated with an action. This can help the user understand the impact or severity of the call-to-action. Badges always appear to the right of the text in an ltr presentation.
+
+:::
+
+::: component-section-level-one-title
+
+## Interaction
+
+:::
+
+:::component-section-level-one
+
+Buttons have built-in loading and disabled states.
+
+:::
+
+::: component-section-level-two-title
+
+### Loading States
+
+:::
+
+::: component-section-level-two
+
+Use the button's **loading state** when you need to communicate that the application is working on a call-to-action a user has iniated by clicking on the button. Use the **error state** when a call-to-action has failed to complete. Use the **success state** when a call-to-action has completed successfully.A button may remain in the success state if a call-to-action is only intended to be performed once.
+
+All three states (loading, error, and success) prevent further execution of the call-to-action.
+
+:::
+
+<DocIndent>
+<div cds-layout="horizontal gap:sm">
+    <cds-button loading-state="loading">default</cds-button>
+    <cds-button loading-state="success">default</cds-button>
+    <cds-button loading-state="error">default</cds-button>
 </div>
+</DocIndent>
+
+::: component-section-level-two-title
+
+### Disabled Buttons
+
+:::
+
+::: component-section-level-two
+
+Buttons may be disabled to indicate to a user that the call-to-action is unavailable. It should be clear to the user why a button is disabled, however, and users should be directed how enable the call-to-action if that is possible.
+
+:::
+
+<DocIndent>
+<cds-button disabled>a disabled button</cds-button>
+</DocIndent>

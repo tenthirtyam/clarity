@@ -10,6 +10,7 @@ import '@clr/core/icon/register.js';
 import '@clr/core/input/register.js';
 import '@clr/core/modal/register.js';
 import '@clr/core/password/register.js';
+import '@clr/core/progress-circle/register.js';
 import '@clr/core/radio/register.js';
 import '@clr/core/range/register.js';
 import '@clr/core/search/register.js';
@@ -39,6 +40,7 @@ import {
   successStandardIcon,
   errorStandardIcon,
   pinIcon,
+  envelopeIcon,
 } from '@clr/core/icon';
 
 ClarityIcons.addIcons(
@@ -57,7 +59,8 @@ ClarityIcons.addIcons(
   circleIcon,
   successStandardIcon,
   errorStandardIcon,
-  pinIcon
+  pinIcon,
+  envelopeIcon
 );
 loadCoreIconSet();
 
