@@ -1,9 +1,11 @@
+import '@clr/core/accordion/register.js';
 import '@clr/core/alert/register.js';
 import '@clr/core/badge/register.js';
 import '@clr/core/button/register.js';
 import '@clr/core/checkbox/register.js';
 import '@clr/core/datalist/register.js';
 import '@clr/core/date/register.js';
+import '@clr/core/divider/register.js';
 import '@clr/core/file/register.js';
 import '@clr/core/forms/register.js';
 import '@clr/core/icon/register.js';

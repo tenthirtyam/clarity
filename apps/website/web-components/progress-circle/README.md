@@ -25,7 +25,7 @@ The circular progress bar is a compact indicator for providing feedback about an
 
 ::: component-section-level-two-title
 
-### Marking Progress OHAI
+### Marking Progress
 
 :::
 
