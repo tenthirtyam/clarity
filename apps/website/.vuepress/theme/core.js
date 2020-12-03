@@ -44,6 +44,7 @@ import {
   uploadIcon,
   blockIcon,
   animationIcon,
+  betaIcon,
 } from '@clr/core/icon';
 
 ClarityIcons.addIcons(
@@ -66,7 +67,8 @@ ClarityIcons.addIcons(
   envelopeIcon,
   uploadIcon,
   blockIcon,
-  animationIcon
+  animationIcon,
+  betaIcon
 );
 loadCoreIconSet();
 
