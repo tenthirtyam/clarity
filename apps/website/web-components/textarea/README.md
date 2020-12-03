@@ -101,7 +101,7 @@ Lorem ipsum.
       <cds-textarea layout="horizontal">
         <label>Disabled</label>
         <textarea disabled></textarea>
-        <cds-control-message status="success">Disabled message</cds-control-message>
+        <cds-control-message>Disabled message</cds-control-message>
       </cds-textarea>
       <cds-textarea layout="horizontal" status="error">
         <label>Error</label>

@@ -24,9 +24,21 @@ Toggle switches take up less space than an “on/off” radio button group and c
 :::
 
 <DocPinbox>
-<div>Use a toggle for On or Off choices.</div>
+<div>
+    <cds-toggle>
+        <label>Airplane mode</label>
+        <input type="checkbox" checked />
+    </cds-toggle>
+    Use a toggle for On or Off choices.
+</div>
 <div class="versus"><div class="versus-bubble">vs</div></div>
-<div>Use a <a href="/web-components/checkbox">checkbox</a> for Yes or No choices.</div>
+<div>
+    <cds-checkbox>
+    <label>Remember me</label>
+    <input type="checkbox" checked />
+    </cds-checkbox>
+    Use a <a href="/web-components/checkbox">checkbox</a> for Yes or No choices.
+</div>
 </DocPinbox>
 
 ::: component-section-level-one-title
