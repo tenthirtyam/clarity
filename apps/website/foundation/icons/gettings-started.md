@@ -1,13 +1,13 @@
 ---
-title: Overview
+title: Getting started
 toc: true
 ---
-
-## Core Icon Overview
 
 The Clarity Icons presents pixel-perfect, scalable SVG-based icons. The icon system gives you complete control over icon color, orientation, and size. Additionally, you can access and customize any SVG graphic elements inside the icon through standard CSS.
 
 ## Installation
+
+Make sure you follow the instructions of [web components getting started page](/web-components/get-started.md) before continue further.
 
 To use the icon component import the component in your JavaScript.
 To see all available icons check out the [Collections Demo](/foundation/icons).
@@ -175,18 +175,6 @@ You can flip icons horizontally or vertically through the use of the flip attrib
 <cds-icon shape="floppy"></cds-icon>
 <cds-icon shape="floppy" flip="horizontal"></cds-icon>
 <cds-icon shape="floppy" flip="vertical"></cds-icon>
-```
-
-</doc-code>
-
-### Make Icons Accessible:
-
-Add a custom title to your icon using the `title` attribute. Adding a title improves the accessibility of the icon, making it recognizable by screen readers. Title attribute also helps you to localize your Icon.
-
-<doc-code>
-
-```html
-<cds-icon shape="copy" title="Copy Document"></cds-icon>
 ```
 
 </doc-code>
