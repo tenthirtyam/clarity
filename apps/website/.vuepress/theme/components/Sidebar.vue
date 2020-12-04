@@ -31,7 +31,7 @@
                     }"
                   >
                     <span class="nav-text">
-                      {{ scrubAttrs(childItem.title) }}
+                      {{ childItem.title }}
                       <cds-icon
                         aria-label="beta"
                         status="info"
@@ -179,13 +179,6 @@ export default {
       // use titles; easier for now...
       const betaItems = ['Progress Circle', 'Accordion', 'Divider', 'File', 'Search', 'Time'];
       return item.path.indexOf('web-components') > -1 && betaItems.indexOf(item.title) > -1;
-    },
-    scrubAttrs: function (titleText) {
-      const attrIndexInTitle = titleText.indexOf('{');
-      if (attrIndexInTitle > -1) {
-        return titleText.slice(0, attrIndexInTitle);
-      }
-      return titleText;
     },
     childActive: function (item) {
       let path = this.$page.path;
