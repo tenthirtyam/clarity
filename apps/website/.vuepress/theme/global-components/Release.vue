@@ -72,8 +72,4 @@ export default {
 .external-link {
   margin-top: -0.5rem;
 }
-
-.release + .release {
-  margin-top: 96px;
-}
 </style>

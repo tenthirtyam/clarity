@@ -27,16 +27,6 @@ function sortChildren(children) {
   });
 }
 
-function isBeta(name, directory) {
-  if (directory !== 'web-components') {
-    return false;
-  }
-
-  const betaComponents = ['progress-circle'];
-
-  return betaComponents.indexOf(name) > -1;
-}
-
 function getChildren(dir) {
   const base = path.join(process.cwd(), dir);
   return (
