@@ -120,7 +120,7 @@ By default, the size for Clarity Icons is 16 by 16 pixels, and you have two ways
 <doc-code>
 
 ```html
-<!--A. SETTING THE SIZE THROUGH cds-ICON SIZE ATTRIBUTE-->
+<!--A. SETTING THE SIZE THROUGH CDS-ICON SIZE ATTRIBUTE-->
 <cds-icon shape="info-circle" size="12"></cds-icon>
 <cds-icon shape="info-circle" size="16"></cds-icon>
 <cds-icon shape="info-circle" size="36"></cds-icon>
@@ -148,7 +148,7 @@ The default rotation for every shape in Clarity Icons is 0 degrees. With directi
 <doc-code>
 
 ```html
-<!--A. SETTING THE ROTATION DIRECTION THROUGH cds-ICON DIRECTION ATTRIBUTE-->
+<!--A. SETTING THE ROTATION DIRECTION THROUGH CDS-ICON DIRECTION ATTRIBUTE-->
 <cds-icon shape="caret" direction="up"></cds-icon>
 <cds-icon shape="caret" direction="right"></ccds-icon>
 <cds-icon shape="caret" direction="down"></cds-icon>
