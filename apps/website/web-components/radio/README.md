@@ -25,7 +25,7 @@ Use radio buttons when you want users to see all available multual exclusive opt
 <div style="align-self: flex-start;ga && gs ">
     <cds-radio>
         <label>Radio label</label>
-        <input type="radio" />
+        <input type="radio" checked />
     </cds-radio>
     Use radio buttons for six or fewer options.
 </div>
@@ -49,51 +49,12 @@ Use radio buttons when you want users to see all available multual exclusive opt
 
 :::
 
-::: component-section-level-three-title
+::: component-section-level-one
 
-### Group label (optional)
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Radio buttons
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Radio label
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Helper message (optional)
-
-:::
-
-:::component-section-level-three
-
-Helper text can be shown with a single radio button or at the bottom of a radio button group. It can be used show regular message, disabled message, success message, or error message.
+1. Group label (optional)
+2. Radio buttons
+3. Radio label
+4. Helper message (optional) - Helper text can be shown with a single radio button or at the bottom of a radio button group. It can be used show regular message, disabled message, success message, or error message.
 
 :::
 

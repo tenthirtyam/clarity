@@ -29,51 +29,12 @@ When setting a password, display the password requirement in the helper text to 
 
 :::
 
-::: component-section-level-three-title
+::: component-section-level-one
 
-### Label (optional)
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Input value / placeholder
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Eye icon
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Helper message (optional)
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
+1. Label (optional)
+2. Input value / placeholder
+3. Eye icon
+4. Helper message (optional)
 
 :::
 

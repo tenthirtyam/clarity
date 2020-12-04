@@ -36,51 +36,12 @@ This is an imprecise input control that should only be used when the exact value
 
 :::
 
-::: component-section-level-three-title
+::: component-section-level-one
 
-### Label
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Range slider
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Range indicator
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Helper message (optional)
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
+1. Label
+2. Range slider
+3. Range indicator
+4. Helper message (optional)
 
 :::
 

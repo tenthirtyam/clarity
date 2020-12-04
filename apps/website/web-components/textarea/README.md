@@ -36,51 +36,12 @@ Use a text field when the expected user input may be more than a single line.
 
 :::
 
-::: component-section-level-three-title
+::: component-section-level-one
 
-### Label
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Container
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Text content
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Helper message (optional)
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
+1. Label
+2. Container
+3. Text content
+4. Helper message (optional)
 
 :::
 

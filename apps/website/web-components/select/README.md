@@ -35,75 +35,14 @@ A common strategy is to combine an input field with a select box so that a user 
 
 :::
 
-::: component-section-level-three-title
+::: component-section-level-one
 
-### Label
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Select option
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Select caret
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Input line
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Helper Message (optional)
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Select menu
-
-:::
-
-:::component-section-level-three
-
-Typically, a select box contains between 3 and 12 items. For fewer than 3 items or to present choices that are always visible, consider a radio button.
+1. Label
+2. Select option
+3. Select caret
+4. Input line
+5. Helper Message (optional)
+6. Select menu - Typically, a select box contains between 3 and 12 items. For fewer than 3 items or to present choices that are always visible, consider a radio button.
 
 :::
 

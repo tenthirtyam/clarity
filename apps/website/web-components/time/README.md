@@ -27,39 +27,11 @@ Use a time input when user is expected to enter a time (hours and minutes, and o
 
 :::
 
-::: component-section-level-three-title
+::: component-section-level-one
 
-### Label (optional)
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Time input
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
-
-:::
-
-::: component-section-level-three-title
-
-### Helper message (optional)
-
-:::
-
-:::component-section-level-three
-
-Lorem ipsum.
+1. Label (optional)
+2. Time input
+3. Helper message (optional)
 
 :::
 

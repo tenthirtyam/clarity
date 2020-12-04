@@ -101,12 +101,8 @@ demos will be added in the near future.
 
 ### Angular
 
-Clarity Core is compatible with most JavaScript frameworks including Angular.
-You can try out Core in Angular today. To get the best experience building
-with Clarity we recommend using <a href="https://clarity.design/angular-components/get-started/" target="_blank" rel="noopener">Clarity Angular</a>
-which provides a suite of feature rich native Angular components.
-
 To use Clarity Core with Angular follow the package [installation instructions](#installation).
+
 Once installed add <code>CUSTOM_ELEMENTS_SCHEMA</code> to your application
 module.
 
@@ -149,6 +145,7 @@ To listen to events use the Angular <code>(event)</code> binding syntax.
 ### Vue
 
 To use Clarity Core with Vue follow the package [installation instructions](#installation).
+
 Once installed import the component into your JavaScript file.
 
 ```typescript
@@ -177,36 +174,25 @@ Example of a alert web component in Vue
 
 ### React
 
-Clarity Core is a suite of Web Components from the [Clarity Design System](https://clarity.design).
-Because React [doesn't fully interoperate with custom elements](https://custom-elements-everywhere.com/)
-we have developed this library of React components that wrap Clarity Web Components
+To use Clarity Core with React follow the package [installation instructions](#installation).
 
-#### Installation
-
-1.  Install the Clarity Core package from npm.
-
-```bash
-npm install @cds/core --save
-```
-
-2.  Install the Clarity React package from npm.
+In addition, because React [doesn't fully interoperate with custom elements](https://custom-elements-everywhere.com/)
+we have developed a library of [React wrapper components](https://reactjs.org/docs/web-components.html#using-web-components-in-react) which must be installed in addition to the core package.
 
 ```bash
 npm install @cds/react --save
 ```
 
-3.  Import desired component into your JavaScript or TypeScript
+Once installed import the component into your JavaScript or Typescript file.
 
 ```typescript
-import { CdsModal, CdsModalActions, CdsModalContent, CdsModalHeader } from '@cds/react/modal';
+import { CdsAlert } from '@cds/react/alert';
 ```
-
-4.  Use React wrapped Web Component in React
 
 Web Components are kebab cased tag name which in `@cds/react` will be converted to
 Pascal case. For example, `<cds-alert>` element will be `<CdsAlert>` in React.
-In addition our event props will follow the React naming convention of camel case for props
-and start with `on`. So the custom event `closeChange` will be `onCloseChange`.
+Our event props will follow the React naming convention of camel case for props
+and start with `on`. The custom event `closeChange` will be `onCloseChange` in React.
 
 ```jsx
 /*
@@ -223,9 +209,7 @@ Example of an alert component in React
 
 #### Using refs
 
-In React [refs](https://reactjs.org/docs/refs-and-the-dom.html) provide a way to access DOM nodes or
-React elements created in the render method. Because web components' lifecycle lives outside of react's
-lifecycle our components provide a way to use refs when the underlying web component has finished rendering:
+In React [refs](https://reactjs.org/docs/refs-and-the-dom.html) provide a way to access DOM nodes or React elements created in the render method. Because web components' lifecycle lives outside of react's lifecycle our components provide a way to use refs when the underlying web component has finished rendering:
 
 ```typescript
 import React from 'react';
@@ -264,6 +248,7 @@ export default class App extends React.Component<{}, {}> {
 ### Preact
 
 To use Clarity Core with Preact follow the package [installation instructions](#installation).
+
 Once installed import the component into your JavaScript file.
 
 ```typescript
@@ -298,6 +283,7 @@ Example of an alert web component in Preact
 </cds-alert-group>
 
 To use Clarity Core with AngularJS follow the package [installation instructions](#installation).
+
 Once installed import the register path in your JavaScript.
 
 ```javascript
