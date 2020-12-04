@@ -2,6 +2,94 @@
   "$schema": "../schema.json",
   "releases": [
     {
+      "version": "4.0.7",
+      "date": "2020-11-26",
+      "description": "This is a bug fix release that addresses issues in Angular components.",
+      "feat": [],
+      "fix": [
+        {
+          "issue": 5326,
+          "title": "Fixed dropdown unlisten method so that it only runs after initialization",
+          "project": "Angular",
+          "scope": "Dropdown"
+        },
+        {
+          "issue": 5307,
+          "title": "Combobox selection issues fixes and a11y improvements (1)",
+          "project": "Angular",
+          "scope": "Combobox"
+        },
+        {
+          "issue": 5275,
+          "title": "Combobox selection issues fixes and a11y improvements (2)",
+          "project": "Angular",
+          "scope": "Combobox"
+        },
+        {
+          "issue": 5282,
+          "title": "Combobox selection issues fixes and a11y improvements (3)",
+          "project": "Angular",
+          "scope": "Combobox"
+        },
+        {
+          "issue": 5199,
+          "title": "Combobox selection issues fixes and a11y improvements (4)",
+          "project": "Angular",
+          "scope": "Combobox"
+        }
+      ]
+    },
+    {
+      "version": "4.0.6",
+      "date": "2020-11-12",
+      "description": "This is a bug fix release that addresses issues in Angular components.",
+      "feat": [],
+      "fix": [
+        {
+          "issue": 5232,
+          "title": "Updating data grid CSS to use flex-start to improve support and remove PostCSS warning",
+          "project": "Angular",
+          "scope": "Datagrid"
+        },
+        {
+          "issue": 5226,
+          "title": "Checkbox/toggles had wrong label color",
+          "project": "Angular",
+          "scope": "Checkbox"
+        },
+        {
+          "issue": 5009,
+          "title": "Fixed underline issue with datepicker",
+          "project": "Angular",
+          "scope": "Datepicker"
+        },
+        {
+          "issue": 5146,
+          "title": "Fixed alignment issue with datepicker",
+          "project": "Angular",
+          "scope": "Datepicker"
+        },
+        {
+          "issue": 5097,
+          "title": "Fixed focus trap issue with the hide/show columns panel in datagrid",
+          "project": "Angular",
+          "scope": "Datagrid"
+        },
+        {
+          "issue": 4754,
+          "title": "Added aria attribute to hide/show columns panel in datagrid",
+          "project": "Angular",
+          "scope": "Datagrid"
+        },
+        {
+          "issue": 5128,
+          "title": "Fixed issue with combo box where single-select selection could not be cleared",
+          "project": "Angular",
+          "scope": "Combobox"
+        }
+      ]
+    },
+    {
       "version": "4.0.5",
       "date": "2020-10-29",
       "description": "This is a bug fix release that addresses issues in Angular components.",
