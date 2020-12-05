@@ -87,9 +87,11 @@ Use a select:
 
 ::: component-section-level-one
 
-<div>
+<DocIndent>
 !!!include(.vuepress/public/core-usage-demos/datalist/states.html)!!!
-</div>
+</DocIndent>
+
+test
 
 :::
 
@@ -101,9 +103,9 @@ Use a select:
 
 ::: component-section-level-one
 
-<div>
+<DocIndent>
 !!!include(.vuepress/public/core-usage-demos/datalist/layouts.html)!!!
-</div>
+</DocIndent>
 
 :::
 
