@@ -1,115 +1,15 @@
 ---
 title: Get started
-toc: true
 ---
 
 The Clarity Icons presents pixel-perfect, scalable SVG-based icons. The icon system gives you complete control over icon color, orientation, and size. Additionally, you can access and customize any SVG graphic elements inside the icon through standard CSS.
 
 ## Installation
 
-Make sure you follow the instructions of [web components getting started page](/web-components/get-started.md) before continue further.
+Follow the instructions in [web components getting started page](/web-components/get-started.md).
 
 To use the icon component import the component in your JavaScript.
 To see all available icons check out the [Collections Demo](/foundation/icons).
-
-### JavaScript
-
-<doc-code>
-
-```javascript
-import '@cds/core/icon/register.js';
-import { ClarityIcons, userIcon } from '@cds/core/icon';
-
-ClarityIcons.addIcons(userIcon);
-```
-
-</doc-code>
-
-<doc-code>
-
-```html
-<cds-icon shape="user"></cds-icon>
-```
-
-</doc-code>
-
-### Angular
-
-<doc-code>
-
-```typescript
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import '@cds/core/icon/register.js';
-
-@NgModule({
-  imports: [BrowserModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-})
-export class AppModule {}
-```
-
-</doc-code>
-
-<doc-code>
-
-```html
-<cds-icon status="user"></cds-icon>
-```
-
-</doc-code>
-
-### React (TypeScript)
-
-<doc-code>
-
-```tsx
-import React from 'react';
-import { CdsIcon } from '@cds/react/button';
-import { ClarityIcons, userIcon, userIconName } from '@cds/core/icon';
-
-ClarityIcons.addIcons(userIcon);
-
-export function() {
-
-  return (
-    <CdsIcon shape="{userIconName}" />
-  )
-}
-```
-
-</doc-code>
-
-### Vue
-
-[See JavaScript](#javascript)
-
-### Preact
-
-[See JavaScript](#javascript)
-
-### AngularJS
-
-<doc-code>
-
-```javascript
-import angular from 'angular';
-import '@cds/core/icon/register.js';
-
-angular.module('app', []);
-angular.element(document).ready(() => angular.bootstrap(document, ['app']));
-
-angular.module('app').component('appRoot', {
-  template: `
-    <cds-icon shape="user"></cds-icon>
-  `,
-});
-```
-
-</doc-code>
 
 ## Usage
 
